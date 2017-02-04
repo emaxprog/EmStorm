@@ -1,0 +1,17 @@
+@import "bourbon";
+
+$default-font: "roboto", sans-serif;
+$wet-asphalt: #34495E;
+$midnight-blue: #2C3E50;
+$peter-river: #3498DB;
+$belize-hole: #2980B9;
+$alizarin:#e74c3c;
+$pomegranate:#c0392b;
+$clouds: #ecf0f1;
+$silver: #bdc3c7;
+
+%list-clear {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
