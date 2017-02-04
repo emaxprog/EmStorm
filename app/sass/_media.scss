@@ -11,40 +11,63 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   /**/
-  .owl-carousel{
-    .item{
-      h1{
-        font-size: em(60px)!important;
-      }
-      h3{
-        font-size: em(20px)!important;
+  .header{
+    .owl-carousel{
+      .item{
+        h1{
+          font-size: em(60px)!important;
+        }
+        h3{
+          font-size: em(20px)!important;
+        }
       }
     }
-  }
-  .top-menu {
-    display: none;
-    > ul {
-      flex-flow: column;
+    .top-menu {
+      display: none;
+      > ul {
+        flex-flow: column;
+      }
+    }
+    .phone-wrap {
+      margin-right: em(40px);
     }
   }
-  .phone-wrap {
-    margin-right: em(40px);
-  }
-
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   /**/
-  .owl-carousel{
-    .item{
-      h1{
-        font-size: em(40px)!important;
-      }
-      h3{
-        font-size: em(18px)!important;
+  .header{
+    .owl-carousel{
+      .item{
+        h1{
+          font-size: em(40px)!important;
+        }
+        h3{
+          font-size: em(18px)!important;
+        }
       }
     }
+  }
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
   }
 }
 

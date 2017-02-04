@@ -24,6 +24,8 @@ gulp.task('scripts', function () {
         'app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.min.js',
         'app/libs/waypoint/jquery.waypoints.min.js',
         'app/libs/animate-css/animate-css.js',
+        'app/libs/callback/callback.js',
+        'app/libs/callback/jquery.validate.min.js',
         'app/js/common.js', // Всегда в конце
     ])
         .pipe(concat('scripts.min.js'))

@@ -244,6 +244,7 @@ a, button {
       width: em(200px);
     }
     .description {
+      padding:em(10px);
       background-color: $wet-asphalt;
       border-radius: em(7px);
       position: relative;
@@ -437,9 +438,13 @@ a, button {
         margin-right: em(5px);
         color: $peter-river;
       }
+      margin-bottom: em(5px);
     }
     animation-delay: .5s;
     animation-duration: 1s;
+  }
+  .map{
+    margin-top: em(5px);
   }
   .form {
     animation-delay: .5s;
@@ -456,14 +461,6 @@ a, button {
       display: flex;
       flex-direction: column;
       align-items: stretch;
-      .form-group {
-        display: flex;
-        flex-direction: column;
-        .label {
-          display: flex;
-          justify-content: space-between;
-        }
-      }
       label {
         color: $peter-river;
       }
@@ -481,6 +478,9 @@ a, button {
         color: $clouds;
         &:hover {
           background-color: $belize-hole;
+        }
+        &:focus,&:active{
+          border:none;
         }
       }
       .error {
