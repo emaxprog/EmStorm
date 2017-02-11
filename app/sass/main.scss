@@ -53,6 +53,20 @@ body {
   height: auto;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $midnight-blue;
+  z-index: 999;
+  background-image: url(../img/bars.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: em(150px);
+}
+
 a, button {
   outline: none !important;
 }
@@ -240,11 +254,15 @@ a, button {
     flex-flow: column nowrap;
     align-items: center;
     color: $clouds;
-    img {
+    .img {
       width: em(200px);
+      img {
+        width: em(200px);
+      }
     }
+
     .description {
-      padding:em(10px);
+      padding: em(10px);
       background-color: $wet-asphalt;
       border-radius: em(7px);
       position: relative;
@@ -416,8 +434,11 @@ a, button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    img {
+    .img{
       width: em(150px);
+      img {
+        width: em(150px);
+      }
     }
     animation-delay: .3s;
   }
@@ -443,7 +464,7 @@ a, button {
     animation-delay: .5s;
     animation-duration: 1s;
   }
-  .map{
+  .map {
     margin-top: em(5px);
   }
   .form {
@@ -479,8 +500,8 @@ a, button {
         &:hover {
           background-color: $belize-hole;
         }
-        &:focus,&:active{
-          border:none;
+        &:focus, &:active {
+          border: none;
         }
       }
       .error {
